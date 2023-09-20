@@ -1,0 +1,11 @@
+<div class="layout">
+    <h1>Upload File</h1>
+    <div class="input-layout">
+        <form [formGroup] = "formGroup" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+            <input id="fileinput" type="file" class="form-control" (change)="onFileChange($event)" />
+            <button class="btn btn-success m-3" type="submit" [disabled]="formGroup.invalid">Upload</button>
+        </form>
+    
+    
+    </div>
+</div>
